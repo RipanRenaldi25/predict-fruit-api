@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1690712752809" clover="3.2.0">
+  <project timestamp="1690712752809" name="All files">
+    <metrics statements="36" coveredstatements="36" conditionals="10" coveredconditionals="10" methods="15" coveredmethods="15" elements="61" coveredelements="61" complexity="0" loc="36" ncloc="36" packages="5" files="7" classes="7"/>
+    <package name="Applications.UseCase.Predicts">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="PredictUseCase.js" path="E:\bahan pa\apk\be\src\Applications\UseCase\Predicts\PredictUseCase.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+      </file>
+      <file name="TensorflowInterface.js" path="E:\bahan pa\apk\be\src\Applications\UseCase\Predicts\TensorflowInterface.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Domains.images">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ImageRepository.js" path="E:\bahan pa\apk\be\src\Domains\images\ImageRepository.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Domains.images.entities">
+      <metrics statements="19" coveredstatements="19" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="8"/>
+      <file name="UploadImage.js" path="E:\bahan pa\apk\be\src\Domains\images\entities\UploadImage.js">
+        <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="17" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+      </file>
+      <file name="UploadedImage.js" path="E:\bahan pa\apk\be\src\Domains\images\entities\UploadedImage.js">
+        <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="21" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Infrastructures.Prisma">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="prismaClient.js" path="E:\bahan pa\apk\be\src\Infrastructures\Prisma\prismaClient.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="Infrastructures.Repository">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="ImageRepositoryConcrete.js" path="E:\bahan pa\apk\be\src\Infrastructures\Repository\ImageRepositoryConcrete.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
