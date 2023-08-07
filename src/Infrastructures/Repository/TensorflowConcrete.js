@@ -27,7 +27,7 @@ class TensorflowConcrete extends TensorflowInterface {
     ctx.drawImage(image, 0, 0, 200, 200);
 
     const imageData = ctx.getImageData(0, 0, 200, 200);
-
+    // const tensorImage = this._tfjs.tensor(imageData, [200, 200, 3], 'float32');
     const tensorImage = this.imageToTensor(imageData);
     const response = await this._loadedModel.predict(tensorImage);
     const result = await response.data();
@@ -43,11 +43,10 @@ class TensorflowConcrete extends TensorflowInterface {
 
   imageToTensor(imageData) {
     const tensorImage = this._tfjs.tensor3d(imageData.data, [200, 200, 4], 'float32');
-    const normalizedTensorImage = tensorImage.slice([0, 0, 0], [200, 200, 3]).div(this._tfjs.scalar(255));
+    const normalizedTensorImage = tensorImage.slice([0, 0, 0], [200, 200, 3]).div(255.0).expandDims();
 
     // Mengubah dimensi tensor menjadi bentuk yang sesuai dengan input model
-    const reshapedTensorImage = normalizedTensorImage.expandDims();
-    return reshapedTensorImage;
+    return normalizedTensorImage;
   }
 
   getTopThreeProbability() {

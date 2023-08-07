@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsDoc from 'swagger-jsdoc';
+import cors from 'cors';
 import createServer from './Interfaces/http/express/CreateServer.js';
 import buildContainer from './Infrastructures/Container.js';
 import routes from './Interfaces/http/express/api/predict/routes.js';
@@ -33,6 +34,7 @@ const specs = swaggerJsDoc(options);
 
 dotenv.config();
 const app = createServer();
+app.use(cors());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 const main = async (appDependency) => {
   // const modelUrl = 'https://storage.googleapis.com/machine_learning_model_tfjs/tfjsmodel/model.json';
